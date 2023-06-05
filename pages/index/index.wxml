@@ -1,0 +1,25 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="button_container">
+    <image src="/icons/web.png"  style="width: 50px; height: 50px;"></image>
+    <button class="button" style="width: 160px;" bindtap="enterPW">个人网站</button>
+  </view>
+  <view style="height: 30px;"></view>
+
+  <view class="button_container">
+    <image src="/icons/arc.png"  style="width: 50px; height: 50px;"></image>
+    <button class="button" style="width: 160px;" bindtap="enterArc">圆弧计算</button>
+  </view>
+  <view style="height: 30px;"></view>
+
+  <view class="button_container">
+    <image src="/icons/scale.png"  style="width: 50px; height: 50px;"></image>
+    <button class="button" style="width: 160px;" bindtap="enterScale">进制转换</button>
+  </view>
+  <view style="height: 30px;"></view>
+
+  <view class="button_container">
+    <image src="/icons/dice.png"  style="width: 50px; height: 50px;"></image>
+    <button class="button" style="width: 160px;" bindtap="enterDice">掷骰子</button>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/arc/arc",
+    "pages/dice/dice",
+    "pages/scale/scale",
+    "pages/web/web"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#3377ee",
+    "navigationBarTitleText": "独饮花间酒",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

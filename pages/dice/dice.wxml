@@ -1,0 +1,29 @@
+<!--pages/dice/dice.wxml-->
+<view class="container">
+  <view class="{{coverView?'show':'hide'}}">
+    <image src="/icons/cover.png"  style="width: 320px; height: 320px;"></image>
+  </view>
+  <view class="{{diceView?'show':'hide'}}">
+    <view style="height: 30px;"></view>
+    <view class="dice_container">
+      <span animation="{{diceAnimation}}" class="dice dice-{{dice_1}}" title="dice_1"></span>
+      <view style="width: 60px;"></view>
+      <span animation="{{diceAnimation}}" class="dice dice-{{dice_2}}" title="dice_2"></span>
+    </view>
+    <view class="dice_container">
+      <span animation="{{diceAnimation}}" class="dice dice-{{dice_3}}" title="dice_3"></span>
+    </view>
+    <view class="dice_container">
+      <span animation="{{diceAnimation}}" class="dice dice-{{dice_4}}" title="dice_4"></span>
+      <view style="width: 60px;"></view>
+      <span animation="{{diceAnimation}}" class="dice dice-{{dice_5}}" title="dice_5"></span>
+    </view>
+    <view style="height: 30px;"></view>
+  </view>
+  <view style="height: 20px;"></view>
+
+  <view class="abreast_container">
+    <button class="button" style="width: 100px;" bindtap="throwDice">投掷</button>
+    <button class="button" style="width: 100px;" bindtap="changeCover">{{coverButton}}</button>
+  </view>
+</view>

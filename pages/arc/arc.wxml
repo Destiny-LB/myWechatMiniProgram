@@ -1,0 +1,33 @@
+<!--pages/arc/arc.wxml-->
+<view class="arc_container">
+  <text class="title">圆弧计算工具</text>
+  <view style="height: 20px;"></view>
+
+  <view class="abreast_container">
+    <text class="text">直径</text>
+    <input class="get" type="digit" placeholder="请输入直径" bindinput="getDiameter" />
+    <text class="text">m</text>
+  </view>
+
+  <view class="abreast_container">
+    <text class="text">弧长</text>
+    <input class="get" type="digit" placeholder="请输入弧长" bindinput="getArc" />
+    <text class="text">m</text>
+  </view>
+
+  <view style="height: 20px;"></view>
+  <button class="button" style="width: 140px;" bindtap="getResult">计算结果</button>
+  <view style="height: 20px;"></view>
+
+  <view class="abreast_container">
+    <text class="text">弦长</text>
+    <view class="put" disabled="true">{{chordLength}}</view>
+    <text class="text">m</text>
+  </view>
+
+  <view class="abreast_container">
+    <text class="text">弦高</text>
+    <view class="put" disabled="true">{{chordHeight}}</view>
+    <text class="text">m</text>
+  </view>
+</view>

@@ -1,0 +1,2 @@
+<!--pages/web/web.wxml-->
+<web-view id="webView" src="https://destiny-lb.top"></web-view>

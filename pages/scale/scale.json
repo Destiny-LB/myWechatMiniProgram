@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "my_select": "/pages/my_select/my_select"
+  }
+}

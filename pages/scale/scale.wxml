@@ -1,0 +1,37 @@
+<!--pages/scale/scale.wxml-->
+<view class="arc_container">
+  <text class="title">进制转换工具</text>
+  <view style="height: 40px;"></view>
+
+  <my_select 
+    title="进制选择"
+    selectList="{{scaleList}}"
+    currentId="{{inputScaleId}}"
+    currentName="{{inputScale}}" 
+    placeholder="请选择进制" 
+    bind:handleChange="changeInputScale">
+  </my_select>
+  <view style="height: 20px;"></view>
+  <view class="conver_container">
+    <text class="conver_text">转换数字</text>
+    <input class="conver_num" bindinput="getNum" />
+  </view>
+
+  <view style="height: 40px;"></view>
+  <button class="button" style="width: 100px;" bindtap="getResult">转换</button>
+  <view style="height: 40px;"></view>
+
+  <my_select 
+    title="进制选择"
+    selectList="{{scaleList}}"
+    currentId="{{outputScaleId}}"
+    currentName="{{outputScale}}" 
+    placeholder="请选择进制" 
+    bind:handleChange="changeOutputScale">
+  </my_select>
+  <view style="height: 20px;"></view>
+  <view class="conver_container">
+    <text class="conver_text">转换结果</text>
+    <view class="conver_num" disabled="true"><span>{{result}}</span></view>
+  </view>
+</view>
