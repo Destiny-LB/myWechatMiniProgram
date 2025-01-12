@@ -9,8 +9,8 @@
 }
 
 .button {
-  background-color: #3377ee;
-  color: #ffffff;
+  background: linear-gradient(to right, #103CE7, #64E9FF);
+  color: #FFFFFF;
   text-align: center;
   font-size: 24px;
   width:fit-content;

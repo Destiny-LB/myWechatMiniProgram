@@ -75,7 +75,7 @@ Page({
    */
   onShareAppMessage() {
     return {
-      title: '独饮花间酒 - 进制转换',
+      title: '吾自人间浪漫 - 进制转换',
       path: '/pages/scale/scale',
       success: function (res) {
         // 分享成功

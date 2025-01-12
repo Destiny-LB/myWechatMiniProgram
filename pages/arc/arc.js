@@ -71,7 +71,7 @@ Page({
    */
   onShareAppMessage() {
     return {
-      title: '独饮花间酒 - 圆弧计算工具',
+      title: '吾自人间浪漫 - 圆弧计算',
       path: '/pages/arc/arc',
       success: function (res) {
         // 分享成功

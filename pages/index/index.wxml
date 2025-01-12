@@ -19,7 +19,13 @@
   <view style="height: 30px;"></view>
 
   <view class="button_container">
+    <image src="/icons/wheel.png"  style="width: 50px; height: 50px;"></image>
+    <button class="button" style="width: 160px;" bindtap="enterWheel">幸运转盘</button>
+  </view>
+  <view style="height: 30px;"></view>
+
+  <view class="button_container">
     <image src="/icons/dice.png"  style="width: 50px; height: 50px;"></image>
-    <button class="button" style="width: 160px;" bindtap="enterDice">掷骰子</button>
+    <button class="button" style="width: 160px;" bindtap="enterDice">逸趣骰子</button>
   </view>
 </view>

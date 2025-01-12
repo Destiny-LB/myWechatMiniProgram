@@ -1,16 +1,16 @@
 <!--pages/scale/scale.wxml-->
-<view class="arc_container">
+<view class="scale_container">
   <text class="title">进制转换工具</text>
   <view style="height: 40px;"></view>
 
-  <my_select 
+  <comboBox 
     title="进制选择"
     selectList="{{scaleList}}"
     currentId="{{inputScaleId}}"
     currentName="{{inputScale}}" 
     placeholder="请选择进制" 
     bind:handleChange="changeInputScale">
-  </my_select>
+  </comboBox>
   <view style="height: 20px;"></view>
   <view class="conver_container">
     <text class="conver_text">转换数字</text>
@@ -21,14 +21,14 @@
   <button class="button" style="width: 100px;" bindtap="getResult">转换</button>
   <view style="height: 40px;"></view>
 
-  <my_select 
+  <comboBox
     title="进制选择"
     selectList="{{scaleList}}"
     currentId="{{outputScaleId}}"
     currentName="{{outputScale}}" 
     placeholder="请选择进制" 
     bind:handleChange="changeOutputScale">
-  </my_select>
+  </comboBox>
   <view style="height: 20px;"></view>
   <view class="conver_container">
     <text class="conver_text">转换结果</text>

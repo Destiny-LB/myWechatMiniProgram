@@ -1,15 +1,16 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/arc/arc",
-    "pages/dice/dice",
-    "pages/scale/scale",
-    "pages/web/web"
+    "pages/index/index", 
+    "pages/arc/arc", 
+    "pages/dice/dice", 
+    "pages/scale/scale", 
+    "pages/web/web", 
+    "pages/wheel/wheel"
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#3377ee",
-    "navigationBarTitleText": "独饮花间酒",
+    "navigationBarBackgroundColor": "#3a92f3",
+    "navigationBarTitleText": "吾自人间浪漫",
     "navigationBarTextStyle": "white"
   },
   "style": "v2",

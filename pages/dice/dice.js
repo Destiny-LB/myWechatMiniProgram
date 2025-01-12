@@ -1,4 +1,6 @@
 // pages/dice/dice.js
+const innerAudioContext = wx.createInnerAudioContext();
+
 Page({
 
   /**
@@ -20,6 +22,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    wx.setInnerAudioOption({
+      mixWithOther: true,
+      obeyMuteSwitch: false,
+      success: function (res) {
+        console.log("play sucess");
+      },
+      fail: function (err) {
+        console.log(err);
+        console.log("play fail");
+      }
+    });
+
     var animation = wx.createAnimation({
       transformOrigin: "50% 50%",
       timingFunction: "ease-in-out"
@@ -27,9 +41,11 @@ Page({
     animation.opacity(1).rotate(1).scale(1, 1).step({
       duration: 10
     });
+    
     this.setData({
       diceAnimation: animation.export()
     });
+
     this.setData({
       dice_1: Math.floor(Math.random() * 6) + 1,
       dice_2: Math.floor(Math.random() * 6) + 1,
@@ -86,7 +102,7 @@ Page({
    */
   onShareAppMessage() {
     return {
-      title: '独饮花间酒 - 掷骰子',
+      title: '吾自人间浪漫 - 逸趣骰子',
       path: '/pages/dice/dice',
       success: function (res) {
         // 分享成功
@@ -100,11 +116,11 @@ Page({
   },
   
   throwDice: function () {
-    var new_dice_1 = Math.floor(Math.random() * 6) + 1;
-    var new_dice_2 = Math.floor(Math.random() * 6) + 1;
-    var new_dice_3 = Math.floor(Math.random() * 6) + 1;
-    var new_dice_4 = Math.floor(Math.random() * 6) + 1;
-    var new_dice_5 = Math.floor(Math.random() * 6) + 1;
+    const new_dice_1 = Math.floor(Math.random() * 6) + 1;
+    const new_dice_2 = Math.floor(Math.random() * 6) + 1;
+    const new_dice_3 = Math.floor(Math.random() * 6) + 1;
+    const new_dice_4 = Math.floor(Math.random() * 6) + 1;
+    const new_dice_5 = Math.floor(Math.random() * 6) + 1;
     console.log(new_dice_1, new_dice_2, new_dice_3, new_dice_4, new_dice_5);
     this.setData({
       dice_1: new_dice_1,
@@ -116,6 +132,8 @@ Page({
       diceView: false,
       coverView: true,
     });
+    innerAudioContext.src = '/audio/dice_sound.mp3';
+    innerAudioContext.play();
     wx.showLoading({
       title: '正在重新投掷',
       mask: true, 
@@ -124,7 +142,7 @@ Page({
       wx.hideLoading();
       wx.showToast({
         title: "投掷成功",
-        icon: "sucess",
+        icon: "success",
         duration: 600,
       });
     }, 1000);

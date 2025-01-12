@@ -63,7 +63,7 @@ Page({
    */
   onShareAppMessage() {
     return {
-      title: '独饮花间酒',
+      title: '吾自人间浪漫',
       path: '/pages/index/index',
       success: function (res) {
         // 分享成功
@@ -104,7 +104,16 @@ Page({
   },
 
   /**
-   * 进入掷骰子游戏
+   * 进入幸运转盘工具
+   */
+  enterWheel: function () {
+    wx.navigateTo({
+      url: '/pages/wheel/wheel',
+    });
+  },
+
+  /**
+   * 进入逸趣骰子工具
    */
   enterDice: function () {
     wx.navigateTo({

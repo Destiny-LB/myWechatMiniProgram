@@ -1,5 +1,8 @@
 <!--pages/dice/dice.wxml-->
 <view class="container">
+  <text class="title">逸趣骰子</text>
+  <view style="height: 20px;"></view>
+  
   <view class="{{coverView?'show':'hide'}}">
     <image src="/icons/cover.png"  style="width: 320px; height: 320px;"></image>
   </view>

@@ -1,5 +1,5 @@
 /* pages/scale/scale.wxss */
-.arc_container {
+.scale_container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@
   font-family: "微软雅黑";
   font-size: 24px;
   font-weight:bold;
-  color: #3377ee;
+  color: #2567ED;
 }
 
 .conver_container {
@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: center;
   margin: 30rpx 0rpx;
-  background-color: #c7c7c7;
+  background-color: #00CCFF;
 }
 
 .conver_text {
@@ -34,18 +34,20 @@
   padding: 10rpx 0rpx;
   text-align: center;
   font-size: 18px;
+  color: #FFFFFF;
 }
 
 .conver_num {
   margin: 0rpx 0rpx;
-  border: 1px solid #c7c7c7;
+  border: 1px solid #00CCFF;
   padding: 10rpx 0rpx;
   text-align: center;
   height: 52rpx;
   width: 360rpx;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   white-space: nowrap;
   overflow-x: scroll;
+  color: #6699FF;
 }
 
 .conver_num span {
@@ -56,10 +58,13 @@
 }
 
 .button {
-  background-color: #3377ee;
-  color: #ffffff;
+  background: linear-gradient(to right, #103CE7, #64E9FF);
+  color: #FFFFFF;
   text-align: center;
   font-size: 18px;
   width:fit-content;
   letter-spacing: 4px;
+}
+.button:hover {
+  background: linear-gradient(to right, #205CE9, #74F9FF);
 }

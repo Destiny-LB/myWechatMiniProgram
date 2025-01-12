@@ -5,13 +5,13 @@
 
   <view class="abreast_container">
     <text class="text">直径</text>
-    <input class="get" type="digit" placeholder="请输入直径" bindinput="getDiameter" />
+    <input class="get" type="digit" placeholder="请输入直径" placeholder-class="b-placeholder" bindinput="getDiameter" />
     <text class="text">m</text>
   </view>
 
   <view class="abreast_container">
     <text class="text">弧长</text>
-    <input class="get" type="digit" placeholder="请输入弧长" bindinput="getArc" />
+    <input class="get" type="digit" placeholder="请输入弧长"  placeholder-class="b-placeholder" bindinput="getArc" />
     <text class="text">m</text>
   </view>
 

@@ -1,6 +1,6 @@
 {
   "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
-  "projectname": "%E7%8B%AC%E9%A5%AE%E8%8A%B1%E9%97%B4%E9%85%92",
+  "projectname": "吾自人间浪漫",
   "setting": {
     "compileHotReLoad": true
   }

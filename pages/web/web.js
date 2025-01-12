@@ -62,7 +62,7 @@ Page({
    */
   onShareAppMessage() {
     return {
-      title: '独饮花间酒 - 个人网站',
+      title: '吾自人间浪漫 - 个人网站',
       path: '/pages/web/web',
       success: function (res) {
         // 分享成功
